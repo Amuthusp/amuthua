@@ -1,0 +1,255 @@
+*{padding: 0;
+    margin: 0;
+     
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.navbar-links{
+    display: flex;
+    column-gap: 10px;
+
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: black;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: green;
+
+}
+
+.navbar-menu-toggle{
+    display:none;
+}
+
+.side-navbar{
+    background-color: rgb(40, 33, 33);
+    width:50%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left: -60%;
+    padding:20px;
+    color:white;
+    transition: 2s;    
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+
+}
+.header-button{
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+.header-button:hover{
+    background-color: white;
+    color:black;
+}
+    
+
+.side-navbar-link{
+    margin-bottom:30px;
+}
+
+.side-navbar-links a{
+    text-decoration: none;
+    color:white;
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+
+}
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.service-container-2{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.service-container-2 div{
+    background-color: rgb(152, 152, 161);
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top:  
+
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+
+}
+.new-arrival button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+    color: black;
+    position:  absolute;
+    top: 50%;
+    left: 18%;
+
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border:solid black 3px;
+
+}
+.news button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+.news button:hover{
+    background-color: white;
+    color: red;
+}
+
+.footer{
+    margin-top: 20px;
+    padding:40px;
+    background-color: rgb(18, 11, 11);
+    color: white;
+}
+
+.product-section{
+    margin-top: 20px;
+}
+
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.product-search input:focus{
+    outline: none;
+}
+
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.product-box {
+    text-align: center;
+     flex-basis:20% ;
+     
+}
+.product-box img{
+    border-radius:10px ;
+
+
+}
+
+.address{
+    padding: 30px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+    background-color: black;
+    border-radius:20px ;
+    color: white;
+
+
+
+}
+
+.address input{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    border: none;
+    border-radius: 20px;
+
+}
+
+
+
+/*media qurery*/
+@media screen and (max-width:700px){
+    .navbar-menu-toggle{
+        display:block;
+    }
+    .navbar-links{
+        display:none;
+    }
+    .img-none{
+        display:none;
+    }
+    .service-container-1{
+        display: none;
+    }
+    .service-container-2{
+        flex-direction: column;
+    }
+}
+
+
+
